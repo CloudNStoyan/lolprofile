@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>LOL Profile</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+
+        <form class="new-ignName">
+            <center><button id="the-switcher" type="button"> Switch </button><input type="text" class="new-ignName" id="input-summonerName" placeholder="Write your Summoner Name" /><button id="btnSummonerName">Enter</button>
+            <select id="select-region">
+                <option value="EUNE" selected="selected">EUNE</option>
+                <option value="EUW">EUW</option>
+                <option value="NA">NA</option>
+            </select>
+            <select id="select-last-names">
+
+            </select>
+            </center>
+    </form>
+        <div id="myProgress" style="display: none">
+            <div id="myBar"></div>
+        </div>
+        <div id="your-elo"></div> <span id="elo-in-string"></span> <span id="lp-in-string"></span>
+        <div id="pastRankDiv"></div>
+        <center><div id="mainChamps"></div></center>
+        <center><button id="switch-button" style="display: none"> Live Game </button></center>
+        <div id="ingame" style="display: none">
+            <div id="blue-team">
+                <div id="blue-teamBanner"><span>Blue Team</span></div>
+                <p id="blueTeamPlayerInfo1">
+                    <img width="50" height="50" src="" id="blueTeam-champion1"  class="blueTeamPlayers">
+                    <img src="" id="blueTeam-player-summoners1" width="25" height="25">
+                    <img src="" id="blueTeam-player-summonersTwo1" width="25" height="25">
+                    <a id="blueTeam-player-name1" class="blueTeamATag" style="position: absolute;left: 70px" href="#" ></a>
+                    <img src="" width="30" height="30" id="blueTeam-elo1" alt=""> <span id="blueTeam-eloSpan1" style="position: center"></span>
+                </p>
+                <p id="blueTeamPlayerInfo2">
+                    <img width="50" height="50" src="" id="blueTeam-champion2" class="blueTeamPlayers">
+                    <img src="" id="blueTeam-player-summoners2" width="25" height="25">
+                    <img src="" id="blueTeam-player-summonersTwo2" width="25" height="25">
+                    <a id="blueTeam-player-name2" class="blueTeamATag" style="position: absolute;left: 70px" href="#" ></a>
+                    <img src="" width="30" height="30" id="blueTeam-elo2" alt=""> <span id="blueTeam-eloSpan2" style="position: center"></span>
+                </p>
+                <p id="blueTeamPlayerInfo3">
+                    <img width="50" height="50" src="" id="blueTeam-champion3" class="blueTeamPlayers">
+                    <img src="" id="blueTeam-player-summoners3" width="25" height="25">
+                    <img src="" id="blueTeam-player-summonersTwo3" width="25" height="25">
+                    <a id="blueTeam-player-name3" class="blueTeamATag" style="position: absolute;left: 70px" href="#" ></a>
+                    <img src="" width="30" height="30" id="blueTeam-elo3" alt=""> <span id="blueTeam-eloSpan3" style="position: center"></span>
+                </p>
+                <p id="blueTeamPlayerInfo4">
+                    <img width="50" height="50" src="" id="blueTeam-champion4" class="blueTeamPlayers">
+                    <img src="" id="blueTeam-player-summoners4" width="25" height="25">
+                    <img src="" id="blueTeam-player-summonersTwo4" width="25" height="25">
+                    <a id="blueTeam-player-name4" class="blueTeamATag" style="position: absolute;left: 70px" href="#" ></a>
+                    <img src="" width="30" height="30" id="blueTeam-elo4" alt=""> <span id="blueTeam-eloSpan4" style="position: center"></span>
+                </p>
+                <p id="blueTeamPlayerInfo5">
+                    <img width="50" height="50" src="" id="blueTeam-champion5" class="blueTeamPlayers">
+                    <img src="" id="blueTeam-player-summoners5" width="25" height="25">
+                    <img src="" id="blueTeam-player-summonersTwo5" width="25" height="25">
+                    <a id="blueTeam-player-name5" class="blueTeamATag" style="position: absolute;left: 70px" href="#" ></a>
+                    <img src="" width="30" height="30" id="blueTeam-elo5" alt=""> <span id="blueTeam-eloSpan5" style="position: center"></span>
+                </p>
+            </div>
+            <div id="red-team">
+                <div id="red-teamBanner"><span>Red Team</span></div>
+                <p id="redTeamPlayerInfo1">
+                    <img width="50" height="50" src="" id="redTeam-champion1"  class="redTeamPlayers">
+                    <img src="" id="redTeam-player-summoners1" width="25" height="25">
+                    <img src="" id="redTeam-player-summonersTwo1" width="25" height="25">
+                    <a id="redTeam-player-name1" class="redTeamATag" style="position: absolute;left: 70px" href="#" ></a>
+                    <img src="" width="30" height="30" id="redTeam-elo1" alt=""> <span id="redTeam-eloSpan1" style="position: center"></span>
+                </p>
+                <p id="redTeamPlayerInfo2">
+                    <img width="50" height="50" src="" id="redTeam-champion2" class="redTeamPlayers">
+                    <img src="" id="redTeam-player-summoners2" width="25" height="25">
+                    <img src="" id="redTeam-player-summonersTwo2" width="25" height="25">
+                    <a id="redTeam-player-name2" class="redTeamATag" style="position: absolute;left: 70px" href="#" ></a>
+                    <img src="" width="30" height="30" id="redTeam-elo2" alt=""> <span id="redTeam-eloSpan2" style="position: center"></span>
+                </p>
+                <p id="redTeamPlayerInfo3">
+                    <img width="50" height="50" src="" id="redTeam-champion3" class="redTeamPlayers">
+                    <img src="" id="redTeam-player-summoners3" width="25" height="25">
+                    <img src="" id="redTeam-player-summonersTwo3" width="25" height="25">
+                    <a id="redTeam-player-name3" class="redTeamATag" style="position: absolute;left: 70px" href="#" ></a>
+                    <img src="" width="30" height="30" id="redTeam-elo3" alt=""> <span id="redTeam-eloSpan3" style="position: center"></span>
+                </p>
+                <p id="redTeamPlayerInfo4">
+                    <img width="50" height="50" src="" id="redTeam-champion4" class="redTeamPlayers">
+                    <img src="" id="redTeam-player-summoners4" width="25" height="25">
+                    <img src="" id="redTeam-player-summonersTwo4" width="25" height="25">
+                    <a id="redTeam-player-name4" class="redTeamATag" style="position: absolute;left: 70px" href="#" ></a>
+                    <img src="" width="30" height="30" id="redTeam-elo4" alt=""> <span id="redTeam-eloSpan4" style="position: center"></span>
+                </p>
+                <p id="redTeamPlayerInfo5">
+                    <img width="50" height="50" src="" id="redTeam-champion5" class="redTeamPlayers">
+                    <img src="" id="redTeam-player-summoners5" width="25" height="25">
+                    <img src="" id="redTeam-player-summonersTwo5" width="25" height="25">
+                    <a id="redTeam-player-name5" class="redTeamATag" style="position: absolute;left: 70px" href="#" ></a>
+                    <img src="" width="30" height="30" id="redTeam-elo5" alt=""> <span id="redTeam-eloSpan5" style="position: center"></span>
+                </p>
+            </div>
+        </div>
+        <div style="display: none" id="championInfoWrapper">
+            <div id="skills">d</div>
+            <div id="summoners">w</div>
+            <div id="items">a</div>
+            <div id="runes">rf</div>
+        </div>
+        <div id="error" style="display: none"></div>
+        <script>
+            require('./renderer.js')
+        </script>
+    </body>
+</html>

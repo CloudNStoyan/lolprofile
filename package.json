@@ -1,0 +1,13 @@
+{
+  "name": "LOLProfile",
+  "version": "0.0.1",
+  "main": "main.js",
+  "description": "This will give you the elo u are in",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "electron-packager": "^10.1.0"
+  }
+}
