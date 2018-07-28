@@ -1,93 +1,32 @@
-a {
-    text-decoration: none;
+* {
+    box-sizing: border-box;
+}
+
+form.main-form input[type=text] {
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 60%;
+    background: #f1f1f1;
+}
+
+form.main-form button {
+    float: left;
+    width: 20%;
+    background: #2196F3;
     color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
 }
 
-.blueTeamATag {
-    position: absolute;
+form.main-form button:hover {
+    background: #0b7dda;
 }
 
-.blueTeamPlayers {
-    border-style: solid;
-    border-width: 2px;
-    border-color: #a3cfec;
-}
-
-.redTeamPlayers {
-    border-style: solid;
-    border-width: 2px;
-    border-color: #ee5a52;
-}
-
-#select-last-names {
-    display: none;
-}
-
-#switch-button {
-    border: 1px;
-    background: none;
-    box-shadow:none;
-    border-radius: 0px;
-    background-color: white;
-}
-#myProgress {
-    width: 100%;
-    background-color: #fff;
-}
-
-#myBar {
-    width: 1%;
-    height: 30px;
-    background-color: #858585;
-}
-body {
-    background-color: black;
-    color: white;
-}
-input {
-    margin: 0 auto;
-}
-#loadingImgId {
-    position: absolute;
-    margin: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #ddd;
-
-}
-
-::-webkit-scrollbar {
-    width: 5px;
-}
-
-::-webkit-scrollbar-track {
-    background-color: #000000;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-}
-
-::-webkit-scrollbar-thumb {
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-    background: #dcdcdc;
-}
-
-#myBar {
-    width: 0%;
-    height: 30px;
-    background-color: #4CAF50;
-}
-
-#pastRankDiv div, #pastRankDiv li {
-    display: inline;
-}
-
-#elo-in-string {
-    text-align: center;
-}
-#lp-in-string {
-    text-align: center;
+form.main-form::after {
+    content: "";
+    clear: both;
+    display: table;
 }
